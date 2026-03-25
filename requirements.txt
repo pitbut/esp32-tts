@@ -1,0 +1,4 @@
+flask
+gtts
+pydub
+gunicorn
