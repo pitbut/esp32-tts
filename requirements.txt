@@ -2,3 +2,4 @@ flask
 gtts
 pydub
 gunicorn
+static-ffmpeg
