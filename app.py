@@ -29,7 +29,7 @@ def get_pcm():
     tts.write_to_fp(mp3_buf)
     mp3_buf.seek(0)
     audio = AudioSegment.from_mp3(mp3_buf)
-    audio = audio.set_frame_rate(22050).set_sample_width(2).set_channels(1)
+    audio = audio.set_frame_rate(16000).set_sample_width(2).set_channels(1)
     return Response(audio.raw_data, mimetype='application/octet-stream')
 
 @app.route('/phrase')
